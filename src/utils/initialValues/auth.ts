@@ -1,0 +1,58 @@
+import { Account_Types_Enums, IGate, IGENDER_ENUMNS } from '@utils/types/global'
+import { UserSchema } from '@utils/types/user'
+
+export const loginInitialValues = {
+  username: '',
+  password: '',
+  gate: IGate.ORGANIZER_DASHBOARD,
+}
+export const signupInitialValues = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  username: '',
+  password: '',
+  confirmPassword: '',
+  accountType: Account_Types_Enums.BUSINESS,
+}
+
+export const initialUserValues: UserSchema = {
+  id: 0,
+  username: '',
+  firstName: '',
+  lastName: '',
+  email: '',
+  gender: IGENDER_ENUMNS.OTHER,
+  dateOfBirth: '',
+  phoneNumber: '',
+  pushNotification: false,
+  twoFAenabled: false,
+  twoFAverified: false,
+  isPrivate: false,
+  imageId: 0,
+  fileId: 0,
+  pastProfileImages: [],
+  bgImageId: undefined,
+  bio: '',
+  bgFileId: undefined,
+  imageUrl: '',
+  bgUrl: '',
+  pastBgImages: [],
+  isVerified: false,
+  isBlocked: false,
+  isUserOnboarded: false,
+  isOrganizerOnboarded: false,
+  accountType: Account_Types_Enums.PERSONAL,
+  isActive: true,
+  registrationMethod: '',
+  appleId: '',
+  googleId: '',
+  googleRefreshToken: '',
+  createdAt: '',
+  updatedAt: '',
+  maxDistance: 0,
+  subscriptionsCount: 0,
+  subscriptions: [],
+  subscribersCount: 0,
+  subscribers: [],
+}
